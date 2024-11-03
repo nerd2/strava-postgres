@@ -135,7 +135,9 @@ try {
                     "from_accepted_tag",
                     "pr_count",
                     "total_photo_count",
-                    "has_kudoed")
+                    "has_kudoed",
+                    "average_watts",
+                    "weighted_average_watts")
                 VALUES
                 (
                     $1,
@@ -191,7 +193,9 @@ try {
                     $51,
                     $52,
                     $53,
-                    $54
+                    $54,
+                    $55,
+                    $56
                 )`;
 
             const values = [
@@ -249,6 +253,8 @@ try {
                 activity.pr_count,
                 activity.total_photo_count,
                 activity.has_kudoed,
+                activity.average_watts,
+                activity.weighted_average_watts,
             ];
 
             try {

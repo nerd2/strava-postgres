@@ -52,5 +52,7 @@ CREATE TABLE "activities" (
   "from_accepted_tag" boolean,
   "pr_count" double precision,
   "total_photo_count" double precision,
-  "has_kudoed" boolean
+  "has_kudoed" boolean,
+  "average_watts" double precision,
+  "weighted_average_watts" double precision
 );
